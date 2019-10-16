@@ -1,0 +1,36 @@
+{
+  "name": "express-wiretap",
+  "description": "server wire logs and insights for express",
+  "version": "1.0.0",
+  "keywords": [
+    "wire", "log", "express", "wiretap"
+  ],
+  "homepage": "https://github.com/pepmartinez/express-wiretap",
+  "bugs": {
+    "url": "https://github.com/pepmartinez/express-wiretap/issues",
+    "email": "pep.martinez@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pepmartinez/express-wiretap.git"
+  },
+  "author": {
+    "name": "Jose Luis Martinez Juan",
+    "email": "pep.martinez@gmail.com"
+  },
+  "license": "GPL-3.0",
+  "dependencies": {
+    "lodash": "~4.17.15",
+    "debug": "~4.1.1"
+  },
+  "devDependencies": {
+    "mocha": "~6.2.1",
+    "should": "~13.2.3",
+    "express": "~4.17.1",
+    "supertest": "~4.0.2"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec --bail --check-leaks --timeout 100000 test/",
+    "test-with-coverage": "nyc --reporter=text -- mocha --reporter spec --check-leaks --no-timeouts --exit test/"
+  }
+}
