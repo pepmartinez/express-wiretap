@@ -9,7 +9,6 @@ const cfg = {
   }
 };
 
-
 const app = express ();
 const wt = new wiretap (cfg);
 app.use (wt.mw ());

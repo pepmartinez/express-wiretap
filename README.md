@@ -17,9 +17,9 @@ const cfg = {
   }
 };
 
-
 const app = express ();
-app.use (wiretap (cfg));
+const wt = new wiretap (cfg);
+app.use (wt.mw ());
 
 app.all ('*', (req, res) => {
   req.on ('end', () => {
@@ -61,5 +61,5 @@ and you'd get the following log:
 ```
 
 # Notes
-* the wire log is not pitch-perfect: it is not a full log attached to the soket. For example, any `100-continue` exchange is not shown
-* if the reqs are marked with an id (such as when using [express-request-id](https://www.npmjs.com/package/express-request-id)) the id is included in the log
+* The wire log is not pitch-perfect: it is not a full log attached to the socket. For example, any `100-continue` exchange is not shown
+* If the reqs are marked with an id (such as when using [express-request-id](https://www.npmjs.com/package/express-request-id)) the id is included in the log
