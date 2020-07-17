@@ -1,9 +1,12 @@
 {
   "name": "express-wiretap",
   "description": "server wire logs and insights for express",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "keywords": [
-    "wire", "log", "express", "wiretap"
+    "wire",
+    "log",
+    "express",
+    "wiretap"
   ],
   "homepage": "https://github.com/pepmartinez/express-wiretap",
   "bugs": {
@@ -20,11 +23,11 @@
   },
   "license": "GPL-3.0",
   "dependencies": {
-    "lodash": "~4.17.15",
+    "lodash": "~4.17.19",
     "debug": "~4.1.1"
   },
   "devDependencies": {
-    "mocha": "~6.2.1",
+    "mocha": "~8.0.1",
     "should": "~13.2.3",
     "express": "~4.17.1",
     "supertest": "~4.0.2"
