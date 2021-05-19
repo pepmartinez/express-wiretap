@@ -3,7 +3,7 @@ const wiretap = require ('../');
 
 
 const cfg = {
-  logger: {
+  loggerd: {
     verbose: function () {console.log.apply (console, arguments)},
     info:    function () {console.log.apply (console, arguments)}
   }
@@ -14,9 +14,7 @@ const wt = new wiretap (cfg);
 app.use (wt.mw ());
 
 app.all ('*', (req, res) => {
-  req.on ('end', () => {
-    res.send ({q: req.query, hdr: req.headers});
-  });
+  res.send ({q: req.query, hdr: req.headers});
 });
 
 app.listen (6677, () => {
