@@ -1,7 +1,7 @@
 {
   "name": "express-wiretap",
   "description": "server wire logs and insights for express",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "keywords": [
     "wire",
     "log",
