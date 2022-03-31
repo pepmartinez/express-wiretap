@@ -63,7 +63,6 @@ describe('wiretap', () => {
     .end((err, res) => {
       logger.buffer ().should.match (/^zxcvbnm - wiretap < GET \/aaaa\/bbbb\?asdfghjkl=qwertyuiop HTTP\/1\.1/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < hdr: 1234567890/);
-      logger.buffer ().should.match (/zxcvbnm - wiretap < User-Agent: node-superagent/);
       logger.buffer ().should.match (/zxcvbnm - wiretap > HTTP\/1\.1 200 OK/);
       logger.buffer ().should.match (/zxcvbnm - wiretap > X-Powered-By: Express/);
       logger.buffer ().should.match (/zxcvbnm - wiretap > Content-Type: application\/json; charset=utf-8/);
@@ -85,7 +84,6 @@ describe('wiretap', () => {
     .end((err, res) => {
       logger.buffer ().should.match (/^zxcvbnm - wiretap < GET \/aaaa\/bbbb HTTP\/1\.1/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < hdr: 1234567890/);
-      logger.buffer ().should.match (/zxcvbnm - wiretap < User-Agent: node-superagent/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < Content-Type: text\/plain/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < Content-Length: 342/);
       logger.buffer ().should.match (/zxcvbnm - wiretap > HTTP\/1\.1 200 OK/);
@@ -110,7 +108,6 @@ describe('wiretap', () => {
     .end((err, res) => {
       logger.buffer ().should.match (/^zxcvbnm - wiretap < GET \/aaaa\/bbbb HTTP\/1\.1/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < hdr: 1234567890/);
-      logger.buffer ().should.match (/zxcvbnm - wiretap < User-Agent: node-superagent/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < Content-Type: text\/plain/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < Content-Length: 342/);
       logger.buffer ().should.match (/zxcvbnm - wiretap > HTTP\/1\.1 200 OK/);
@@ -134,7 +131,6 @@ describe('wiretap', () => {
     .end((err, res) => {
       logger.buffer ().should.match (/^zxcvbnm - wiretap < GET \/aaaa\/bbbb HTTP\/1\.1/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < hdr: 1234567890/);
-      logger.buffer ().should.match (/zxcvbnm - wiretap < User-Agent: node-superagent/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < Content-Type: text\/plain/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < Content-Length: 342/);
       logger.buffer ().should.match (/zxcvbnm - wiretap > HTTP\/1\.1 200 OK/);
@@ -158,7 +154,6 @@ describe('wiretap', () => {
     .end((err, res) => {
       logger.buffer ().should.match (/^zxcvbnm - wiretap < GET \/aaaa\/bbbb HTTP\/1\.1/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < hdr: 1234567890/);
-      logger.buffer ().should.match (/zxcvbnm - wiretap < User-Agent: node-superagent/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < Content-Type: text\/plain/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < Content-Length: 342/);
       logger.buffer ().should.match (/zxcvbnm - wiretap > HTTP\/1\.1 200 OK/);
@@ -183,7 +178,6 @@ describe('wiretap', () => {
     .end((err, res) => {
       logger.buffer ().should.match (/^zxcvbnm - wiretap < GET \/aaaa\/bbbb HTTP\/1\.1/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < hdr: 1234567890/);
-      logger.buffer ().should.match (/zxcvbnm - wiretap < User-Agent: node-superagent/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < Content-Type: text\/plain/);
       logger.buffer ().should.match (/zxcvbnm - wiretap < Content-Length: 342/);
       logger.buffer ().should.match (/zxcvbnm - wiretap > HTTP\/1\.1 200 OK/);
