@@ -1,7 +1,7 @@
 {
   "name": "express-wiretap",
   "description": "server wire logs and insights for express",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "keywords": [
     "wire",
     "log",
@@ -27,10 +27,10 @@
     "lodash": "~4.17.21"
   },
   "devDependencies": {
-    "express": "~4.17.3",
-    "mocha": "~9.2.2",
+    "express": "~4.18.2",
+    "mocha": "~10.2.0",
     "should": "~13.2.3",
-    "supertest": "~6.2.2"
+    "supertest": "~6.3.3"
   },
   "scripts": {
     "test": "mocha --reporter spec --bail --check-leaks --timeout 100000 test/",
